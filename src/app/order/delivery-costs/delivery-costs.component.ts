@@ -8,7 +8,7 @@ export class DeliveryCostsComponent implements OnInit {
 
  
   @Input() delivery: number
-  @Input() intemsValue: number
+  @Input() itemsValue: number
 
   
   constructor() { }
@@ -18,6 +18,6 @@ export class DeliveryCostsComponent implements OnInit {
 
 
   total(): number {
-    return this.delivery + this.intemsValue;
+    return this.delivery + this.itemsValue;
   }
 }
