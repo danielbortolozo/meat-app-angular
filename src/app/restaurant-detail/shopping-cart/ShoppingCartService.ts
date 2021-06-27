@@ -9,6 +9,7 @@ export class ShoppingCartService {
 
     clear() {
        this.items = []
+       
     }
 
     addItem(item: MenuItem) {

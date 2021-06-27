@@ -19,13 +19,14 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/ShoppingCartService';
 import { OrderComponent } from './order/order.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
 import { OrdemItemsComponent } from './order/ordem-items/ordem-items.component';
 import { OrderService } from './order/order.service';
 import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { RastingComponent } from './shared/rasting/rasting.component';
 
 
 @NgModule({
@@ -46,12 +47,14 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     RadioComponent,
     OrdemItemsComponent,
     DeliveryCostsComponent,
-    OrderSummaryComponent    
+    OrderSummaryComponent,
+    RastingComponent    
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [ RestaurantsService,
