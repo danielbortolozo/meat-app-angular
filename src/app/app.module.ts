@@ -41,16 +41,13 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    SharedModule,
+    HttpModule,    
     FormsModule,
     ReactiveFormsModule,
+    SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ RestaurantsService,
-               ShoppingCartService, 
-               OrderService,
-               {provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
