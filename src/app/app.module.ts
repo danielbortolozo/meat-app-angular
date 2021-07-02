@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component';
 import { SharedModule } from './shared/shared.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { SharedModule } from './shared/shared.module';
     ReviewsComponent,    
     OrderSummaryComponent,
    
-    SnackbarComponent    
+    SnackbarComponent,
+   
+    NotFoundComponent    
   ],
   imports: [
     BrowserModule,
