@@ -22,6 +22,6 @@ export const ROUTES: Routes = [
     {path: 'order', loadChildren: './order/order.module#OrderModule'}, 
     {path: 'order-summary', component: OrderSummaryComponent},     
     {path: 'about', loadChildren: './about/about.module#AboutModule'},
-    {path: '**', component: NotFoundComponent}, 
+    {path: '**', component: NotFoundComponent} 
        
 ]
